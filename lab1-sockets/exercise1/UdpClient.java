@@ -30,7 +30,7 @@ public class UdpClient {
             System.out.println("Received message: " + msg);
             System.out.println("Sender address:   " + receivePacket.getSocketAddress());
         }
-        catch(Exception e){
+        catch(Exception e) {
             e.printStackTrace();
         }
         finally {

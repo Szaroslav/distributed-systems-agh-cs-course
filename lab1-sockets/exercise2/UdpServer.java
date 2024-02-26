@@ -9,7 +9,7 @@ public class UdpServer {
         System.out.println("Java UDP server");
 
         DatagramSocket socket = null;
-        int portNumber        = 9008;
+        int portNumber        = 9009;
 
         try {
             socket               = new DatagramSocket(portNumber);
@@ -21,11 +21,6 @@ public class UdpServer {
                 socket.receive(receivePacket);
                 String msg = new String(receivePacket.getData());
                 System.out.println("Received message: " + msg);
-
-                byte[] sendBuffer   = "UDP server message".getBytes();
-                DatagramPacket sendPacket = new DatagramPacket(
-                    sendBuffer, sendBuffer.length, receivePacket.getSocketAddress());
-                socket.send(sendPacket);
             }
         }
         catch(Exception e) {

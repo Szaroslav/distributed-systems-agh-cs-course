@@ -7,7 +7,3 @@ msg = "Ping Python Udp!"
 print('PYTHON UDP CLIENT')
 client = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 client.sendto(bytes(msg, 'cp1250'), (serverIP, serverPort))
-
-
-
-
