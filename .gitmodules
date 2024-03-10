@@ -1,0 +1,3 @@
+[submodule "ass1-sockets"]
+	path = ass1-sockets
+	url = git@github.com:Szaroslav/socket-chat.git
